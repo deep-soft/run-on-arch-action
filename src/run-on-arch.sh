@@ -98,6 +98,7 @@ run_container () {
   docker run \
     --workdir "${GITHUB_WORKSPACE}" \
     --rm \
+    --memory-swap -1 \
     -e DEBIAN_FRONTEND=noninteractive \
     -e CI \
     -e GITHUB_ACTION \
