@@ -1,10 +1,11 @@
 name: Update floating tag
 
 on:
-  push:
-    tags:
-      # Only match vXX.YY.ZZ tags
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+#  push:
+#    tags:
+#      # Only match vXX.YY.ZZ tags
+#      - 'v[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   update-tag:
