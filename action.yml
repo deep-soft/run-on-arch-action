@@ -42,5 +42,4 @@ inputs:
 
 runs:
   using: 'node16'
-  timeout-minutes: 720
   main: 'src/run-on-arch.js'
